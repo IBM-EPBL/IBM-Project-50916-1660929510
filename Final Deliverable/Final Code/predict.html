@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Predictor</title>
+		<style>
+			body {
+				background-color: #000000;
+			}
+			.main-container {
+				background: #C0C0C0;
+				width: 80%;
+				margin: 0 auto;
+				min-height: 95vh;
+			}
+			header {
+				padding: 2em;
+			}
+			h1 {
+				padding: 0;
+				margin: 0;
+				color: #008000;
+				text-align: center;
+				text-shadow: 2px 2px #ff0000;
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				margin: 3em;
+				width: 50%;
+				margin: 0 auto;
+				padding: 2em;
+				background-color: #F08080;
+			}
+			label {
+				margin-top: 1em;
+			}
+			.submit {
+				width: 30%;
+				padding: 5%;
+				margin: 1em auto;
+				background-color: #e27d6091;
+				box-shadow: 2px 2px black;
+				border: none;
+				border-radius: 1em;
+				color: white;
+				font-weight: bold;
+				text-shadow: 1.5px 1.5px black;
+			}
+		</style>
+	</head>
+
+	<body>		
+<div class="main-container">
+			<h1>Please Fill in the details</h1>
+			<form name="form" , method="POST" , style="text-align: center">
+				<label for="text" name="name"> Name: </label>
+				<input type="text" name="name" />
+
+				<label for="text"> Age: </label>
+				<input type="text" name="age" />
+
+				<label for="sex"> Sex: </label>
+				<select name="sex">
+					<option value="1">Male</option>
+					<option value="0">Female</option>
+				</select>
+
+				<label for="cp"> Chest pain type: </label>
+				<select name="cp">
+					<option value="1">Typical angina</option>
+					<option value="2">Atypical angina</option>
+					<option value="3">Non-anginal pain</option>
+					<option value="4">Asymptomatic</option>
+				</select>
+
+				<label for="trestbps"> Resting Blood Sugar: </label>
+				<select name="trestbps">
+					<option value="1">less than 140mg/dl</option>
+					<option value="2">more than 200mg/dl</option>
+					<option value="3">between 141-199mg/dl</option>
+				</select>
+				<label for=""> Maximum Heart Rate Achieved: </label>
+				<input type="text" name="thalach" />
+
+				<label for="exang"> Exercise Induced Angina: </label>
+				<select name="exang">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</select>
+
+				<label for=""> Number of Major Vessels Colored by Flourosopy: </label>
+				<input type="text" name="ca" />
+
+				<label for="thal"> Thalium Stress Result: </label>
+				<select name="thal">
+					<option value="3">normal</option>
+					<option value="6">Fixed defect</option>
+					<option value="7">Reversable defect</option>
+				</select>
+<br>
+<h2><a href="C:\Users\ELCOT\Downloads\IBM\code\img.html">predict</a></h2>
+
+				
+			</form>
+		</div>
+	</body>
+</html>
